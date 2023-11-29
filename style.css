@@ -1,18 +1,23 @@
 /* global variables */
 :root {
-    --light-red: hsl(0, 100%, 67%);
-    --yellow:hsl(39, 100%, 56%);
-    --teal: hsl(166, 100%, 37%);
-    --blue-cobalt: hsl(234, 85%, 45%);
+    --accent1: hsl(0, 100%, 67%);
+    --accent2:hsl(39, 100%, 56%);
+    --accent3: hsl(166, 100%, 37%);
+    --accent4: hsl(234, 85%, 45%);
 
     --gradient-primary: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 
     --gradient-secondary: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    
-    --netural-white: hsl(0, 0%, 100%);
-    --neutral-blue:hsl(221, 100%, 96%);
-    --neutral-lavender:hsl(241, 100%, 89%);
-    --neutral-dark-blue:hsl(224, 30%, 27%);
+
+    --netural-white: 0, 0%, 100%;
+    --neutral-blue: 221, 100%, 96%;
+    --neutral-lavender: 241, 100%, 89%;
+    --neutral-dark-blue: 224, 30%, 27%;
+
+    --clr-neutral-100: hsl(var(--netural-white));
+    --clr-neutral-200: hsl(var(--neutral-blue));
+    --clr-neutral-300: hsl(var(--neutral-lavender));
+    --clr-neutral-700: hsl(var(--neutral-dark-blue));
 
     --fw-default: 500;
     --fw-bold: 700;
@@ -81,4 +86,52 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--neutral-dark-blue);
+}
+@media (min-width: 600px){
+    body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-boldest);    
+}
+
+.button {
+    color: var(--netural-white);
+    line-height: 1;
+    border:none;
+    background: var(--gradient-primary);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
+.button:is(:hover, :focus){
+    background: var(--clr-neutral-700);
+}
+
+.results-summary {
+    max-width: 600px;
+    display: grid;
+}
+@media (min-width: 600px){
+    .results-summary {
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        border-radius: 2rem;
+        box-shadow: .5rem 1rem 3rem hsl(var(--neutral-lavender),0.3);
+    }
+}
+
+.results {
+    text-align: center;
+    background: var(--gradient-primary);
+    color: hsl(var(--netural-white),0.7)
 }
