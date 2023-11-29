@@ -5,12 +5,10 @@
     --teal: hsl(166, 100%, 37%);
     --blue-cobalt: hsl(234, 85%, 45%);
 
-    --gr-slate-blue: hsl(252, 100%, 67%);
-    --gr-royal-blue: hsl(241, 81%, 54%);
+    --gradient-primary: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 
-    --gr-violet-blue: hsla(256, 72%, 46%, 1);
-    --gr-persian-blue: hsla(241, 72%, 46%, 0);
-
+    --gradient-secondary: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    
     --netural-white: hsl(0, 0%, 100%);
     --neutral-blue:hsl(221, 100%, 96%);
     --neutral-lavender:hsl(241, 100%, 89%);
