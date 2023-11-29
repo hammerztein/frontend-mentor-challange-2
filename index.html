@@ -20,28 +20,63 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Your Result 76 of 100 Great You scored higher than 65% of the people who
-    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
-    / 100 Visual 72 / 100 Continue
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <!-- Results section -->
+      <div class="results grid-flow" data-spacing="large">
+        <h1 class="results-title">Your Result</h1>
+        <p class="results-score"><span>76</span> of 100</p>
+        <div class="grid-flow">
+          <p class="result-rank">Great</p>
+          <p class="result-text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <!-- Summary section -->
+      <div class="summary">
+        <h2 class="summary-title">Summary</h2>
+        <div class="grid-flow">
+          <!-- Summary Item -->
+          <div class="summary-item" data-item-type="accent-1">
+            <div class="flex-group">
+              <svg></svg>
+              <h3 class="summary-item-title">Reaction</h3>
+            </div>
+            <p class="summary-score"><span>80</span> / 100</p>
+          </div>
+          <!-- End of item -->
+          <!-- Summary Item -->
+          <div class="summary-item" data-item-type="accent-2">
+            <div class="flex-group">
+              <svg></svg>
+              <h3 class="summary-item-title">Memory</h3>
+            </div>
+            <p class="summary-score"><span>92</span> / 100</p>
+          </div>
+          <!-- End of item -->
+          <!-- Summary Item -->
+          <div class="summary-item" data-item-type="accent-3">
+            <div class="flex-group">
+              <svg></svg>
+              <h3 class="summary-item-title">Verbal</h3>
+            </div>
+            <p class="summary-score"><span>61</span> / 100</p>
+          </div>
+          <!-- End of item -->
+          <!-- Summary Item -->
+          <div class="summary-item" data-item-type="accent-4">
+            <div class="flex-group">
+              <svg></svg>
+              <h3 class="summary-item-title">Visual</h3>
+            </div>
+            <p class="summary-score"><span>72</span> / 100</p>
+          </div>
+          <!-- End of item -->
+        </div>
+        <button class="button">Continue</button>
+      </div>
+    </main>
   </body>
 </html>
