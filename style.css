@@ -112,7 +112,8 @@ body {
     border:none;
     background: var(--gradient-primary);
     padding: 1rem 2rem;
-    border-radius: var(--border-radius)
+    border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .button:is(:hover, :focus){
     background: var(--clr-neutral-700);
