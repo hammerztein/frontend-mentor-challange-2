@@ -1,3 +1,26 @@
+/* global variables */
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --yellow:hsl(39, 100%, 56%);
+    --teal: hsl(166, 100%, 37%);
+    --blue-cobalt: hsl(234, 85%, 45%);
+
+    --gr-slate-blue: hsl(252, 100%, 67%);
+    --gr-royal-blue: hsl(241, 81%, 54%);
+
+    --gr-violet-blue: hsla(256, 72%, 46%, 1);
+    --gr-persian-blue: hsla(241, 72%, 46%, 0);
+
+    --netural-white: hsl(0, 0%, 100%);
+    --neutral-blue:hsl(221, 100%, 96%);
+    --neutral-lavender:hsl(241, 100%, 89%);
+    --neutral-dark-blue:hsl(224, 30%, 27%);
+
+    --fw-default: 500;
+    --fw-bold: 700;
+    --fw-boldest: 800;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -13,7 +36,10 @@
 * {
     margin: 0;
 }
-
+html,
+body{
+    height: 100%;
+}
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -57,12 +83,4 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
-}
-
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
 }
